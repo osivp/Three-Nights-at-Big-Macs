@@ -18,6 +18,8 @@ Can **you** survive three nights?
 HOW TO COMPILE:
 
  compile ONLY the bigmac_game.c file, as its the main running board for the game. 
-    **gcc bigmac_game.c -o bigmac_game.c** 
-
+    
+    GCC = **gcc bigmac_game.c -o bigmac_game.c** 
+    
+    MinGW = **x86_64-w64-mingw32-gcc -g -o bigmac_game-win-v0_3.exe bigmac_game_win.c**
  you can use the compiler of your choice, but GCC is preferred.
