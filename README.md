@@ -3,8 +3,11 @@ You are fred figglehorn, a weird edgy kid stuck in a love coma with a girl named
 God forbid, the hellhole you got into is only starting now. 
 
 Characters
+
 Main character - Fred Figglehorn 
+
 Main Villian - Officer Big Mac
+
 Side Villians - 67 Kid, Ed Sheeran, A battle tank, and a happy meal dressed as the "did unc snap" guy.
 
 Can you survive three nights?
