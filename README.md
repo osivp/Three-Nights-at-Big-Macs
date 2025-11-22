@@ -1,4 +1,4 @@
-Simple FNAF game that runs in the terminal. 
+Simple FNAF game that runs in the windows command line. 
 You are fred figglehorn, a weird edgy kid stuck in a love coma with a girl named Judy. You go to work at mcdonalds as you dont want your arch nemesis kevin to get the job before you. 
 God forbid, the hellhole you got into is only starting now. 
 
