@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main_gameplay.c"
-
+#include <unistd.h>
 void main_menu()
 {
     //NESTED FUNCTIONS
@@ -126,6 +126,7 @@ void main_menu()
             system("clear");
             printf("Built by a team of hardworking individuals.\n");
             printf("Locke, Oliver, Nathan, and Danielle.\n");
+            sleep(10);
             main_menu()
             break;
     }
