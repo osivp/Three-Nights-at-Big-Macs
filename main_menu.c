@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main_gameplay_win.c"
-
+#include <unistd.h>
 void main_menu()
 {
     //NESTED FUNCTIONS
@@ -92,6 +92,8 @@ void main_menu()
     printf("2. Input Save Code\n");
     printf("3. How To Play\n");
     printf("4. Quit\n");
+    printf("5. Credits\n");
+
 
     int input;
 
@@ -100,7 +102,7 @@ void main_menu()
     {
         printf(">> ");
         scanf("%d", &input);
-    }while (input != 1 && input != 2 && input != 3 && input != 4);
+    }while (input != 1 && input != 2 && input != 3 && input != 4 && input != 5); //you have to add a few extra things like a input and a != operator with the number or else it wont work smh- I shouldve thought. Lol.
 
     //Decrypts menu input
     switch(input)
@@ -120,6 +122,14 @@ void main_menu()
         case 4:
             system("cls");
             exit(1);
+            break;
+        case 5:
+            system("clear");
+            printf("Built by a team of hardworking individuals.\n");
+            printf("Locke, Oliver, Nathan, and Danielle.\n");
+            sleep(10);
+            system("clear");
+            main_menu();
             break;
     }
     return;
