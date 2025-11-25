@@ -1,3 +1,7 @@
+//CREDITS TO LOCKE OLIVER FOR THE MAIN CODE
+//although I did modify a couple of things. heheheheheehehheehhe....,,,,
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -20,7 +24,7 @@ void cams_state(int *power, time_t *stime, time_t *ctime, int *timer_max, int ro
     while (1)
     {
         do
-        {
+        { //map diagram for printing out when you look at the cameras.
             printf("                                        ._____________.      \n"
                    "                                        |             |      \n"
                    "     MAP LAYOUT                         |             |      \n"
@@ -50,51 +54,51 @@ void cams_state(int *power, time_t *stime, time_t *ctime, int *timer_max, int ro
             {
                 //Reception
                 case 1:
-                    printf("You are viewing the Reception, Cam 1\n");
+                    printf("You are viewing the Reception, Cam 1.\n");
                     break;
                 //Dinning Area
                 case 2:
-                    printf("You are viewing the Dinning Area, Cam 2\n");
+                    printf("You are viewing the Dinning Area, Cam 2.\n");
                     break;
                 //Main Stage
                 case 3:
-                    printf("You are viewing the Main Stage, Cam 3\n");
+                    printf("You are viewing the Main Stage, Cam 3.\n");
                     break;
                 //Arcade
                 case 4:
-                    printf("You are viewing the Arcade, Cam 4\n");
+                    printf("You are viewing the Arcade, Cam 4.\n");
                     break;
                 //Kitchen
                 case 5:
-                    printf("You are viewing the Kitchen, Cam 5\n");
+                    printf("You are viewing the Kitchen, Cam 5.\n");
                     break;
                 //Freezer
                 case 6:
-                    printf("You are viewing the Freezer, Cam 6\n");
+                    printf("You are viewing the Freezer, Cam 6.\n");
                     break;
                 //Play Pen
                 case 7:
-                    printf("You are viewing the Play Pen, Cam 7\n");
+                    printf("You are viewing the Play Pen, Cam 7.\n");
                     break;
                 //Hall
                 case 8:
-                    printf("You are viewing the Hall, Cam 8\n");
+                    printf("You are viewing the Hall, Cam 8.\n");
                     break;
                 //Bathroom
                 case 9:
-                    printf("You are viewing the Bathroom, Cam 9\n");
+                    printf("You are viewing the Bathroom, Cam 9.\n");
                     break;
                 //Dumpster
                 case 0:
-                    printf("You are viewing the Dumpster, Cam 0\n");
+                    printf("You are viewing the Dumpster, Cam 0.\n");
                     break;
                 //Left Vent
                 case 10:
-                    printf("You are viewing the Left Vent, Cam q\n");
+                    printf("You are viewing the Left Vent, Cam q.\n");
                     break;
                 //Right Vent
                 case 11:
-                    printf("You are viewing the Right Vent, Cam w\n");
+                    printf("You are viewing the Right Vent, Cam w.\n");
                     break;
             }
 
@@ -169,7 +173,7 @@ void cams_state(int *power, time_t *stime, time_t *ctime, int *timer_max, int ro
             printf("\n");
 
             //Choices
-            printf("1. View Reception\n");
+            printf("1. View Reception\n"); //some bs right here fr fr fr 
             printf("2. View Dinning Area\n");
             printf("3. View Main Stage\n");
             printf("4. View Arcade\n");
@@ -259,43 +263,15 @@ void cams_state(int *power, time_t *stime, time_t *ctime, int *timer_max, int ro
                             }
                         }
                         else
-                            printf("You don't have enough power\n");
+                            printf("You don't have enough power.\n");
                     break;
                 
                 //Close Cams
                 case 's':
                     return;
                     break;
-                case 'm':
-                    printf(
-                        "                                        ._____________."
-                        "                                        |             |"
-                        "                                        |             |"
-                        "                             ___________|      1      |"
-                        "                             |     0    |             |"
-                        ".____________________________|___x______|_____x_______|______."
-                        "|     6    |            5           |      2      |    3     |"
-                        "|         x|                       x|             |          |"
-                        "|__________|________________________|             |          |"
-                        "           |            4          x|            x|          |"
-                        ".__________|________________________|             |          |"
-                        "|     9   x|            8          x|             |          |"                      
-                        "|          |___x____________________|_____________|__________|"
-                        "|          |x  8   |                       | x          x    |"  
-                        "|__________|       |                       |        7        |"
-                        "           |       |_______________________|                 |"
-                        "           |       |      14   |x   10    x|_________________|"
-                        "           |       |           |___________|  x  |            "
-                        "           |      x|           |___________|     |            "
-                        "           |       |           |x      18        |            "
-                        "           |___x___|___________|_________________|            "
-                        "           |            |                                     "
-                        "           |     13     |                                     "
-                        "           |            |                                     "
-                        "           |____________|                                     "
+    
 
-
-                    );
                     return;
                     break;
             }
@@ -331,7 +307,7 @@ void turn_state(int *power, time_t *stime, time_t *ctime, int *timer_max, int *v
                 if (*vent)
                     printf("Right Vent is Closed.\n");
                 else
-                    printf("Left Vent is Closed\n");
+                    printf("Left Vent is Closed.\n");
                 
                 //Choices
                 printf("1. Switch Closed Vent\n");
@@ -375,7 +351,7 @@ int main_gameplay()
 {
     //Vars
     int input = 0;          //Input
-    int power_max = 10;     //Max Power
+    int power_max = 15;     //Max Power
     int power = 5;          //Power
     int generator = 1;      //Generator State
     int vent = 0;           //Which vent is shut, 0 Left, 1 Right
@@ -498,10 +474,10 @@ int main_gameplay()
                                 stime -= 1;         //Causes power to take 1 second
                             }
                             else
-                                printf("Power is full\n");
+                                printf("Power is full.\n");
                         }
                         else
-                            printf("The generator is broken\n");
+                            printf("The generator is broken. Repair it.\n");
                         break;
                     
                     //Activate Lasers
@@ -513,7 +489,7 @@ int main_gameplay()
                             //Weegie
                             if (rooms[15][2])
                             {
-                                printf("Weegie Got U\n");
+                                printf("Weegie Got U!\n");
                                 alive = 0;
                             }
                             //Big Mac
@@ -521,11 +497,11 @@ int main_gameplay()
                             {
                                 rooms[15][0] = 0;
                                 rooms[2][0] = 1;
-                                printf("SOUNDS\n");
+                                printf("SOUNDS.\n");
                             }
                         }
                         else
-                            printf("You don't have enough power\n");
+                            printf("You don't have enough power.\n");
                         break;
                     
                     //Cams
@@ -539,10 +515,10 @@ int main_gameplay()
                     //Repair Gen
                     case 5:
                         if (generator)
-                            printf("Generator already works\n");
+                            printf("Generator already works.\n");
                         else
                         {
-                            printf("Generator fixed\n");
+                            printf("Generator has been fixed.\n");
                             generator = 1;
                             stime -= 2;         //Causes power to take 2 second
                         }
