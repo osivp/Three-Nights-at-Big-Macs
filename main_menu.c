@@ -100,7 +100,7 @@ void main_menu()
     {
         printf(">> ");
         scanf("%d", &input);
-    }while (input != 1 && input != 2 && input != 3 && input != 4);
+    }while (input != 1 && input != 2 && input != 3 && input != 4 && input != 5); //you have to add a few extra things like a input and a != operator with the number or else it wont work smh- I shouldve thought. Lol.
 
     //Decrypts menu input
     switch(input)
