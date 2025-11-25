@@ -3,6 +3,7 @@
 #include <unistd.h>
 void main_menu()
 {
+    system("clear");
     //NESTED FUNCTIONS
     //How to play loading
     void how_play()
@@ -127,7 +128,8 @@ void main_menu()
             printf("Built by a team of hardworking individuals.\n");
             printf("Locke, Oliver, Nathan, and Danielle.\n");
             sleep(10);
-            main_menu()
+            system("clear");
+            main_menu();
             break;
     }
     return;
