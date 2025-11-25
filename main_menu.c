@@ -52,6 +52,7 @@ void main_menu()
 
         main_menu();
     }
+   
     
 
     //Prints Main Menu title and options
@@ -123,8 +124,9 @@ void main_menu()
             break;
         case 5:
             system("clear");
-            printf("Built by a team of hardworking individuals.");
-            printf("Locke, Oliver, Nathan, and Danielle.");
+            printf("Built by a team of hardworking individuals.\n");
+            printf("Locke, Oliver, Nathan, and Danielle.\n");
+            main_menu()
             break;
     }
     return;
