@@ -91,6 +91,7 @@ void main_menu()
     printf("2. Input Save Code\n");
     printf("3. How To Play\n");
     printf("4. Quit\n");
+    printf("5. Credits\n");
 
     int input;
 
@@ -119,6 +120,11 @@ void main_menu()
         case 4:
             system("clear");
             exit(1);
+            break;
+        case 5:
+            system("clear");
+            printf("Built by a team of hardworking individuals.");
+            printf("Locke, Oliver, Nathan, and Danielle.");
             break;
     }
     return;
